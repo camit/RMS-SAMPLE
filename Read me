@@ -7,3 +7,14 @@ Build a .NET/C# REST API application with Angular 2+ and Bootstrap front-end fra
 •	On Confirmation of saving the training name, start date and end date REST API should save details to DB and respond with Success message. Along with message, application should display number of days between the two date inputs.
 
 •	Unit/Integration test cases are mandatory
+
+
+This Sample project is build using Visual Studio 2019 and consist of below projects
+
+WEB API in .Net Core  2.2
+SAMPLE Angular APP Angular 7 Version
+Unit Test Project xUnit Test
+Integration Test Project xUnit Integrationtest
+
+Training Controller is the main controller for calling all the Post/Get  and test calls
+
