@@ -1,0 +1,9 @@
+Build a .NET/C# REST API application with Angular 2+ and Bootstrap front-end framework. Specific requirements are below.
+
+•	The application should provide a UI form with input fields as training name, start date, end date, and a Confirm button to submit the form.
+
+•	If the end date is before the start date, the application should display an error message and the message text should be defined externally.
+
+•	On Confirmation of saving the training name, start date and end date REST API should save details to DB and respond with Success message. Along with message, application should display number of days between the two date inputs.
+
+•	Unit/Integration test cases are mandatory
