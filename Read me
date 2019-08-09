@@ -18,3 +18,4 @@ Integration Test Project xUnit Integrationtest
 
 Training Controller is the main controller for calling all the Post/Get  and test calls
 
+All the references used in the projects are availabed via Nuget packages.
