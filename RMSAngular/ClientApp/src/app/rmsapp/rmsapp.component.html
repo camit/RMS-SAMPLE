@@ -1,0 +1,46 @@
+<!--<div class="container">
+  
+    <h1>Training Form</h1>
+    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+      <div class="form-group">
+        <label for="name">Training Name</label>
+        <input type="text" class="form-control" id="trainingname"
+               required
+               [(ngModel)]="model.trainingname" name="trainingname"
+               #name="ngModel">
+        <div [hidden]="trainingname.valid || trainingname.pristine"
+             class="alert alert-danger">
+          Training is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="startdate">Start Date</label>
+        <input type="date" class="form-control" id="startdate" required
+               [(ngModel)]="model.startdate" name="startdate">
+      </div>
+
+      <div class="form-group">
+        <label for="enddate">End Date</label>
+        <input type="date" class="form-control" id="enddate"
+               [(ngModel)]="model.enddate" name="enddate">
+      </div>
+      <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>   
+    </form>
+  </div>-->
+
+  <form [formGroup]="userForm" (submit)="saveUser()">
+    <label for="trainingname">Training Name</label>
+    <input formControlName="trainingname" id="trainingname" type="text" />
+    <control-messages [control]="userForm.get('trainingname')"></control-messages>
+
+    <label for="startdate">Start Date</label>
+    <input formControlName="startdate" id="startdate" type="date" />
+    <control-messages [control]="userForm.get('startdate')"></control-messages>
+
+    <label for="enddate">End Date</label>
+    <input formControlName="enddate" id="enddate" type="date" />
+    <control-messages [control]="userForm.get('enddate')"></control-messages>
+
+    <button type="submit" [disabled]="!userForm.valid">Submit</button>
+  </form>
