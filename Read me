@@ -23,3 +23,7 @@ All the references used in the projects are availabed via Nuget packages.
 The main solution file is placed in RMS Sample folder having references to other projects
 
 The Angular Calls are defined in RMS component of Angular application
+
+API solution is using entity framework code first approach.
+To communicate the API request with database, please ensure the database "set in appsettings.json file of the api project" exists on the database server.
+Initiate a get request from api solution to training controller to generate the tables in database.
